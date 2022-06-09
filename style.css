@@ -1,0 +1,47 @@
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.selection-section{
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+    padding: 2em;
+}
+
+
+.colors-text-container,
+.color-displayer{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.colors-text-container{
+    justify-content: space-around;
+}
+
+
+.color-code{
+    font-weight: 700;
+}
+
+.color-container{
+    width: 20%;
+    height: 80vh;
+    border: 1px red solid;
+}
+
+button,
+input,
+select{
+    border: 1px solid #D1D5DB;
+    height: 5vh;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+

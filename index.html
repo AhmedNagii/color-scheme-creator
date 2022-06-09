@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Color scheme Genertor</title>
+</head>
+<body>
+    
+   <section class="selection-section">    
+   <input id="color-selector" type="color">
+
+   <select name="Mode" id="mode">
+    <option value="monochrome">Monochrome </option>
+    <option value="monochrome-dark">Monochrome-dark</option>
+    <option value="monochrome-light">Monochrome-light</option>
+    <option value="analogic">Analogic </option>
+    <option value="complement ">Complement  </option>
+    <option value="analogic-complement">Analogic-complement</option>
+    <option value="triad ">Triad</option>
+    <option value="quad">Quad</option>
+  </select>
+
+  <button id="get-scheme">Get color scheme</button>
+</section> 
+  
+
+<section class="color-displayer">
+<div class="color-container"></div>
+<div class="color-container"></div>
+<div class="color-container"></div>
+<div class="color-container"></div>
+<div class="color-container"></div>
+</section>
+
+<section class="colors-text-container"> 
+    <h3 class="color-code">#ffffff</h3>
+    <h3 class="color-code" >#ffffff</h3>
+    <h3 class="color-code">#ffffff</h3>
+    <h3 class="color-code">#ffffff</h3>
+    <h3 class="color-code">#ffffff</h3>
+</section>
+
+  
+    <script src="script.js"></script>
+</body>
+</html>
