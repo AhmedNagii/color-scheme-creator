@@ -2,6 +2,7 @@ body{
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #1F2937;
 }
 
 
@@ -9,12 +10,12 @@ body{
     display: flex;
     justify-content: center;
     gap: 4%;
-    padding: 2em;
+    padding: 1.5em;
 }
 
 
 .colors-text-container,
-.color-displayer{
+.colors-container{
     display: flex;
     flex-direction: row;
 }
@@ -28,11 +29,28 @@ body{
 .color-code{
     font-weight: 700;
 }
+.color-code:hover,
+.color-code:focus{
+    color: #fff;
+    cursor: pointer;
+}
 
-.color-container{
+.single-color-container{
     width: 20%;
     height: 80vh;
-    border: 1px red solid;
+}
+
+
+select{
+    width: 30%;
+}
+
+input{
+    width: 3rem;
+}
+
+button{
+    background-color: #fff;
 }
 
 button,
@@ -40,8 +58,52 @@ input,
 select{
     border: 1px solid #D1D5DB;
     height: 5vh;
-    text-align: center;
     border-radius: 5px;
     
 }
 
+
+
+#snackbar {
+    visibility: hidden; 
+    min-width: 5%; 
+    margin-left: -125px; 
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    border-radius: 10px; 
+    padding: 16px; 
+    position: fixed; 
+    z-index: 1; 
+    left: 50%; 
+    bottom: 30px; 
+  }
+
+
+  #snackbar.show {
+    visibility: visible; 
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+
+
+
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
