@@ -3,14 +3,15 @@ body {
     margin: 0;
     padding: 0;
     background-color: #1F2937;
+    
 }
 
 
 .selection-section {
     display: flex;
     justify-content: center;
-    gap: 4%;
-    padding: 1.5em;
+    gap: 2em;
+    padding: 1em;
 }
 
 
@@ -27,7 +28,7 @@ body {
 
 
 .color-code {
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .color-code:hover,
@@ -43,11 +44,13 @@ body {
 
 
 select {
-    width: 30%;
+    min-width: 50px;
+
+    width: 30%
 }
 
 input {
-    width: 3rem;
+    min-width: 3rem;
 }
 
 button {
@@ -58,9 +61,8 @@ button,
 input,
 select {
     border: 1px solid #D1D5DB;
-    height: 5vh;
+    min-height: 35px;
     border-radius: 5px;
-
 }
 
 
