@@ -29,17 +29,20 @@ body {
 
 .color-code {
     font-weight: bold;
+    color: #ffffff;
 }
 
 .color-code:hover,
 .color-code:focus {
-    color: #fff;
+    color: rgb(89, 178, 230);
     cursor: pointer;
+    font-size: 1.4rem;
 }
 
 .single-color-container {
     width: 20%;
     height: 80vh;
+
 }
 
 
